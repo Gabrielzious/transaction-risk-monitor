@@ -1,0 +1,41 @@
+### JetBrains (IntelliJ IDEA) ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+gen/
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# If you don't want to share the Maven wrapper:
+.mvn/wrapper/maven-wrapper.jar
+
+### Java / Compile ###
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Logs ###
+logs/
+*.log
+logback.xml
+
+### Operating System ###
+.DS_Store
+Thumbs.db
