@@ -3,9 +3,7 @@ package furlan.project.transaction.model;
 import furlan.project.transaction.enums.TransactionStatus; // New Enum
 import furlan.project.transaction.enums.TransactionType;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -15,6 +13,8 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class TransactionEntity {
 
     @Id
@@ -27,6 +27,9 @@ public class TransactionEntity {
      */
     @Column(name = "external_id", unique = true, nullable = false)
     private String externalId = UUID.randomUUID().toString();
+
+    @Column(name = "customer_id", nullable = false)
+    private String customerId;
 
     @Column(name = "transaction_date", nullable = false)
     private LocalDateTime transactionDate;
